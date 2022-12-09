@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Three D</title>
+	<style type="text/css">
+		*{
+			perspective:1000px;
+		}
+
+		img{
+			width:300px;
+			display:block;
+			margin:auto;
+			margin-top:200px;
+
+			transition:all 2s ease;
+		}
+
+		img:hover{
+			transform:translateZ(800px);
+			/*transform:skewY(20deg);*/   
+		}
+	</style>	
+</head>
+<body>
+	<img src="img/dog.jpg" alt="dog" />
+</body>
+</html>

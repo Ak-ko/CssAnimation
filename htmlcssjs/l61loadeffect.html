@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loader Effect</title>
+	<style type="text/css">
+		*{
+			perspective:200px;
+		}
+
+		body{
+			height:100vh;
+			background-color:#5ce1ff;
+
+			display:flex;
+			justify-content:center;
+			align-items:center;
+
+			margin:0;
+			overflow:hidden;
+		}
+
+		div.loading{
+			width:120px;
+			height:120px;
+
+			background-color:#fff;
+
+			border-radius:20px;			
+
+			animation:myani 2s linear infinite;
+		}
+
+		@keyframes myani{
+			0%{
+				transform:rotate(0);
+				box-shadow:10px 10px 1px blue,-10px -10px 1px red;
+			}
+
+			50%{
+				transform:rotateY(180deg);
+			}
+
+			100%{
+				transform:rotateY(180deg) rotateX(-180deg);
+				box-shadow:10px 10px 1px red,-10px -10px 1px blue;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="loading"></div>
+</body>
+</html>

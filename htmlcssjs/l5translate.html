@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Translate Function</title>
+	<style type="text/css">
+		img{
+			width:300px;
+			display:block;
+			margin:auto;
+			margin-top:200px;
+
+			transition:all 2s;
+		}
+
+		img:hover{
+			/*default is X-axis*/
+			/*transform:translate(100px);*/
+
+			/*X - axis*/
+			/*transform:translateX(100px);*/
+
+			/*Y-axis*/
+			/*transform:translateY(109px);*/
+
+			/*+ values or - values are acceptable*/
+
+			/* % values also*/
+
+			/*transform:translate(-100%);*/
+
+			transform:translate(100px, 100px);
+		}
+	</style>
+</head>
+<body>
+	<img src="./img/dog.jpg" alt="dog" />
+</body>
+</html>

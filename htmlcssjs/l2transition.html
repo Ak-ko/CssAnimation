@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Transition</title>
+	<style type="text/css">
+
+	button{
+		width:290px;
+		height:90px;
+		background-color:blue;
+		color:#fff;		
+		font-size:28px;
+		border:0;
+		/*transition-property:width,background-color,color;*/
+		/*or*/
+		/*transition-property:all;*/
+		/*transition-duration:2s;*/
+		/*transition:all 3s;*/
+		/*transition:width 10s, background-color 3s, color 5s, border-radius 7s;*/
+
+		/*Effect*/
+		/*transition-property:all;
+		transition-duration:2s;
+		transition-timing-function:linear;*/
+
+		transition:background-color 2s linear, color 2s ease-out;
+	}
+
+	button:hover{
+		/*width:600px;*/
+		background-color:red;
+		color:black;
+		/*border-radius:1.5rem;*/
+	}
+	</style>
+</head>
+<body>
+	<button>CSS TRANSITION</button>
+</body>
+</html>

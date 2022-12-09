@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loader Effect</title>
+	<style type="text/css">
+		body{
+			height:100vh;
+			font-family:sans-serif;
+			background-color:#f4f4f4;
+
+			display:flex;
+			justify-content:center;
+			align-items:center;
+		}
+
+		ul{
+			list-style-type:none;
+			padding:0;
+			margin:0;
+
+			display:flex;
+		}
+
+		ul li{
+			font-size:70px;
+			color:red;			
+			letter-spacing:20px;		
+
+			animation:myani 3s infinite linear;		
+		}
+
+		ul li:nth-of-type(1){
+			animation-delay:0s;
+		}
+
+		ul li:nth-of-type(2){
+		    animation-delay:0.2s;
+		}
+
+		ul li:nth-of-type(3){
+			animation-delay:0.4s;
+		}
+
+		ul li:nth-of-type(4){
+			animation-delay:0.6s;
+		}
+
+		ul li:nth-of-type(5){
+			animation-delay:0.8s;
+		}
+
+		ul li:nth-of-type(6){
+			animation-delay:1s;
+		}
+
+		ul li:nth-of-type(7){
+			animation-delay:1.2s;
+		}
+
+
+		@keyframes myani{
+			0%{
+				opacity:0;
+				color:red;			
+				transform:translate(-50px);				
+				letter-spacing:20px;
+			}
+
+			10%{
+				opacity:1;	
+			}
+
+			50%{
+				opacity:1;		
+
+				color:blue;
+				transform:translate(50px);
+				letter-spacing:-10px;
+			}
+
+			100%{				
+				color:red;
+				transform:translate(-50px);
+				letter-spacing:20px;
+				opacity:0;
+			}
+		}
+
+
+	</style>
+</head>
+<body>
+	<ul>
+		<li>L</li>
+		<li>O</li>
+		<li>A</li>
+		<li>D</li>
+		<li>I</li>
+		<li>N</li>
+		<li>G</li>		
+	</ul>
+</body>
+</html>
